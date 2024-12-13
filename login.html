@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>LOGIN</title>
+<meta http-equiv="refresh" content="1800">
+<style>
+        body{
+        background: linear-gradient(#021526,#03346E);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+    }
+.all{
+    text-align: center;
+}
+.bo{
+    padding-top: 20px;
+    padding-left: 60px;
+}
+.input {
+  margin: 14px;
+  background:none ;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #E2E2B6;
+}
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: rgb(55, 0, 255) solid 0.15em;
+  border-radius: 20px;
+  color: #E2E2B6;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  width: 30%;
+  height: 14px;
+}
+.button p {
+  z-index: 1;
+}
+.button:hover {
+  color: #03346E;
+}
+.button:active {
+  border-color: #021526;
+}
+.button::after, .button::before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  aspect-ratio: 1;
+  background: #E2E2B6;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+.button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+.button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+.button:hover:before {
+  transform: translateX(-1em);
+}
+.button:hover:after {
+  transform: translateX(1em);
+}
+.button:active:before,
+.button:active:after {
+  background:#0073ff;
+}
+.logo-container
+    {
+position: fixed;
+top: -70px;
+left: 5px;
+    }
+    .logo{
+        color:#E2E2B6;
+        height:10%;
+       font-size: 200%;
+       font-weight: bold;
+       text-align: center;
+       margin: 100px auto;
+       width: 100px; 
+            padding: 20px;
+            background: linear-gradient(145deg, #021526, #03346E);
+            box-shadow: 8px 8px 15px #E2E2B6, -8px -8px 15px #E2E2B6;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .logo span {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .logo span:hover {
+            transform: translateY(5px);
+    }
+.card {
+  width: 190px;
+  height: 120px;
+  padding: 0.5rem;
+  background:#03346E;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid #ffbd44;
+  border-left: 2px  #ffbd44 outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+  transform: skewX(10deg);
+  transition: .4s;
+  overflow: hidden;
+  color: white;
+  margin-left: 30px;
+}
+.card:hover {
+  height: 254px;
+  transform: skew(0deg);
+}
+.align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
+}
+.red {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff605c;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+.yellow {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbd44;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+.green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00ca4e;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+.card h1,h2,h4 {
+  text-align: center;
+  margin: 1.3rem;
+  color: rgb(218, 244, 237);
+  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+    </style>
+</head>
+<body>
+    <div class="all">
+<div class="card">
+  <div class="align">
+      <span class="red"></span>
+      <span class="yellow"></span>
+      <span class="green"></span>
+  </div>
+  <h1>LOGIN</h1>
+    <h2>Welcome back again</h2>
+    <h4>Iraqi Hobbies website welcomes you</h4>
+</div>
+    <form action="the gerne.html" method="post">
+         <input placeholder="Username" class="input" name="text" type="text" required><br><br>
+         <input placeholder="password" class="input" name="pas" type="password" required>
+         <div class="bo">
+          <button class="button">
+            <p>submit</p>
+          </button>
+          </div>
+    </form>
+         <div class="logo-container">
+            <div class="logo">
+              <span>H</span> 
+              <span>O</span>
+              <span>B</span>
+            </div>
+        </div>
+
+</body>
+</html>
